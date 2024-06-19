@@ -31,7 +31,17 @@ procedure TfrmPrincipal.btnExibeMsgClick(Sender: TObject);
 
 
 begin
-       ShowMessage(edtMensagem.Text);
+  if(edtMensagem.Text = '') then
+  begin
+    lblMensagem.Caption := 'Você não Digitou nada';
+  end
+  else
+  begin
+  lblMensagem.Caption := edtMensagem.Text;
+   edtMensagem.Text := '';
+
+  end;
+
 
 end;
 

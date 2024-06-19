@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2024/06/19 14:28:20.484,=C:\Users\Jonas\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2024/06/19 14:43:01.806,C:\Users\Jonas\Documents\Embarcadero\Studio\Projects\Trabalhos\Aula 1-Introdução\UnomeDaUnit.pas=C:\Users\Jonas\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2024/06/19 14:43:01.806,C:\Users\Jonas\Documents\Embarcadero\Studio\Projects\Trabalhos\Aula 1-Introdução\UnomeDaUnit.dfm=C:\Users\Jonas\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2024/06/19 14:43:20.696,C:\Users\Jonas\Documents\Embarcadero\Studio\Projects\Trabalhos\Aula 1-Introdução\NomeDoProjeto.dproj=C:\Users\Jonas\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+	<Transactions>
+    <Transaction>2024/06/19 14:28:20.000.484,=C:\Users\Jonas\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/06/19 14:43:01.000.806,C:\Users\Jonas\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Jonas\Documents\Embarcadero\Studio\Projects\Trabalhos\Aula 1-Introdução\UnomeDaUnit.dfm</Transaction>
+    <Transaction>2024/06/19 14:43:01.000.806,C:\Users\Jonas\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Jonas\Documents\Embarcadero\Studio\Projects\Trabalhos\Aula 1-Introdução\UnomeDaUnit.pas</Transaction>
+    <Transaction>2024/06/19 14:43:20.000.696,C:\Users\Jonas\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Jonas\Documents\Embarcadero\Studio\Projects\Trabalhos\Aula 1-Introdução\NomeDoProjeto.dproj</Transaction>
   </Transactions>
 </BorlandProject>
