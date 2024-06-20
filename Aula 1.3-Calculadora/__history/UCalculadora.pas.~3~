@@ -1,0 +1,88 @@
+unit UCalculadora;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmCalculadora = class(TForm)
+    edtn1: TEdit;
+    edtn2: TEdit;
+    lblCalcular: TLabel;
+    lblResultado: TLabel;
+    btnMais: TButton;
+    btnMenos: TButton;
+    btnVeses: TButton;
+    btnDividir: TButton;
+    procedure btnMaisClick(Sender: TObject);
+    procedure btnMenosClick(Sender: TObject);
+    procedure btnVesesClick(Sender: TObject);
+    procedure btnDividirClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCalculadora: TfrmCalculadora;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmCalculadora.btnDividirClick(Sender: TObject);
+begin
+ if (edtn1.Text = '') or (edtn2.Text = '') then
+  begin
+    lblResultado.Caption := 'Dados incompletos';
+  end
+  else if StrToFloat(edtn2.Text) = 0 then
+  begin
+    lblResultado.Caption := 'Divisão por zero';
+  end
+  else
+  begin
+    lblResultado.Caption := FloatToStr(StrToFloat(edtn1.Text) / StrToFloat(edtn2.Text));
+  end;
+end;
+
+procedure TfrmCalculadora.btnMaisClick(Sender: TObject);
+begin
+  if (edtn1.Text = '') or (edtn2.Text = '') then
+  begin
+    lblResultado.Caption := 'Dados incompletos';
+  end
+  else
+  begin
+    lblResultado.Caption := IntToStr(StrToInt(edtn1.Text) + StrToInt(edtn2.Text));
+  end;
+end;
+
+procedure TfrmCalculadora.btnMenosClick(Sender: TObject);
+begin
+  if (edtn1.Text = '') or (edtn2.Text = '') then
+  begin
+    lblResultado.Caption := 'Dados incompletos';
+  end
+  else
+  begin
+    lblResultado.Caption := IntToStr(StrToInt(edtn1.Text) - StrToInt(edtn2.Text));
+  end;
+end;
+
+procedure TfrmCalculadora.btnVesesClick(Sender: TObject);
+begin
+  if (edtn1.Text = '') or (edtn2.Text = '') then
+  begin
+    lblResultado.Caption := 'Dados incompletos';
+  end
+  else
+  begin
+    lblResultado.Caption := IntToStr(StrToInt(edtn1.Text) * StrToInt(edtn2.Text));
+  end;
+end;
+
+end.

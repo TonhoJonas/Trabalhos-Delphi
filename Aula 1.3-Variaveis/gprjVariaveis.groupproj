@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{209853B1-2A93-422C-AE5D-C864D78A400E}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="prjVariaveis.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="prjVariaveis">
+        <MSBuild Projects="prjVariaveis.dproj"/>
+    </Target>
+    <Target Name="prjVariaveis:Clean">
+        <MSBuild Projects="prjVariaveis.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="prjVariaveis:Make">
+        <MSBuild Projects="prjVariaveis.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="prjVariaveis"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="prjVariaveis:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="prjVariaveis:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
